@@ -1,7 +1,7 @@
-# Terraform-Source-Swap
+# Terraform Source-Swap with Terragrunt
 
 
-## Source-swap Script
+## Source-Swap Script
 
 ### Author: Kermit Smith
 ### Date: December 2024
