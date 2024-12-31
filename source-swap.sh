@@ -27,13 +27,6 @@
 path_to_main=""
 source_swap_found=false
 
-# Check if current working directory contains "prd"
-current_dir=$(pwd)
-if [[ "$current_dir" == *"/prd"* ]]; then
-  printf "Warning: Current working directory contains 'prd'. Source swapping should only be done in non-prod environments to avoid unintended changes in production.\n"
-  printf "Remove the source-swap block from terragrunt.hcl and try again.\n"
-fi
-
 while IFS= read -r line || [ -n "$line" ]; do
   old_source=""
   new_source=""
