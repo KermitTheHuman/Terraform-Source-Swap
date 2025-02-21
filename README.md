@@ -9,11 +9,13 @@
 This script reads `terragrunt.hcl` and swaps the source in the Terraform `*.tf` files for the module specified in `terragrunt.hcl`.  
 This is useful when you want to swap the source of a module in other environments while using same Terraform root module.
 
+Feb. 2025 Update:
 An additional option is to set the repo versioning. By using the wild card '*' you can set all calls in your script to 
 other repos to a specific version. You can also change a specific module's source version by specifying the module name. 
 
 ### Usage
-Enter a source-swap block as shown in the examples below. Be sure to comment out the block to avoid Terragrunt errors.  
+Enter a source-swap block as shown in the examples below. Commenting out the block is not longer needed. 
+Code was changed to remove the source-swap block during runtime.  
 **Note**: This is not a function of Terragrunt.
 
 ```hcl
